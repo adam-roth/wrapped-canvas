@@ -7,6 +7,7 @@
 
 To use this code, simply include 'wrapped-canvas.js' in your page/application context using whatever method you prefer, and then use `new BrowserIndependentCanvas(width, height)` wherever you want to work with an unlimited/cross-browser canvas.
 
+You can then call `getContext('2d')` on your `BrowserIndependentCanvas` instance to get a `BrowserIndependentContext` instance, which you can draw on using the exact same drawing API's as a native canvas/context instance.
 
 ### Limitations
 
