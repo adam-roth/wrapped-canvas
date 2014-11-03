@@ -33,7 +33,7 @@ So this project was created in an attempt to work around the problem in a way th
 This library will allow you to programmatically interact with a "canvas" element that exceeds the browser's maximum allowed canvas size.  Use it if that sounds like something you'd want to do.
 
 **_Why should I NOT use this library?_**<br />
-Don't use this code if you need access to drawing API's that are currently unimplemented, or canvas elements that scale arbitrarily along the x-axis.  Also don't use it if your use-case doesn't require canvas elements so large that they exceed the browser's intrinsic limits.  It's best to work with a single native canvas element wherever possible.  
+Don't use this code if you need access to drawing API's that are currently unimplemented (unless you feel like coding them yourself), or canvas elements that scale arbitrarily along the x-axis.  Also don't use it if your use-case doesn't require canvas elements so large that they exceed the browser's intrinsic limits.  It's best to work with a single native canvas element wherever possible.  
 
 **_Why are so many drawing API's unimplemented?_**<br />
 Because my use-case involved integrating this project with html2canvas, so it was only necessary to implement the drawing API's that html2canvas actually uses.  Which thankfully happened to be only a small subset of the complete API.  
